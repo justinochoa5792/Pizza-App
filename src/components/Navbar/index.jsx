@@ -1,12 +1,12 @@
 import React from "react";
 import { Nav, NavLink, NavIcon, Bars } from "./NavbarElements";
 
-const index = () => {
+const index = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavLink to="/">Pizza</NavLink>
-        <NavIcon>
+        <NavIcon onClick={toggle}>
           <p>Menu</p>
           <Bars />
         </NavIcon>
